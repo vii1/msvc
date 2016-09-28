@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SDL2_DIR>d:\Library\SDL2-2.0.4</SDL2_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(SDL2_DIR)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>$(SDL2_DIR)\lib\$(ProcessorArchitecture)\SDL2main.lib;$(SDL2_DIR)\lib\$(ProcessorArchitecture)\SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SDL2_DIR">
+      <Value>$(SDL2_DIR)</Value>
+    </BuildMacro>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="$(SDL2_DIR)\lib\$(ProcessorArchitecture)\SDL2.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+# Ignore everything in this directory
+*
+# Except
+!.gitignore
+!/packages/.gitignore
+!/boost/mantain.cmd
+!/props/
+!README.md

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SIMCONNECT_SDK>C:\Program Files (x86)\Lockheed Martin\Prepar3D v2 SDK 2.5.12946.0\Utilities\SimConnect SDK</SIMCONNECT_SDK>
+    <SIMCONNECT_P3D25>C:\Users\Gabriel\devel\SimConnect_p3d25\Release</SIMCONNECT_P3D25>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(SIMCONNECT_SDK)\Inc;$(IncludePath)</IncludePath>
+    <CustomBuildAfterTargets>BuildLink</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>$(SIMCONNECT_P3D25)\SimConnect_p3d25.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SIMCONNECT_SDK">
+      <Value>$(SIMCONNECT_SDK)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SIMCONNECT_P3D25">
+      <Value>$(SIMCONNECT_P3D25)</Value>
+    </BuildMacro>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(SIMCONNECT_P3D25)\SimConnect_p3d25.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
