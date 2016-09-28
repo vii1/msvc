@@ -1,0 +1,29 @@
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=d:/Library/boost
+
+//Path to a library.
+SDL2MAIN_LIBRARY:FILEPATH=d:/Library/SDL2/lib/x86/SDL2main.lib
+
+//Path to a file.
+SDL2_IMAGE_INCLUDE_DIR:PATH=d:/Library/SDL2_image-2.0.0/include
+
+//Path to a library.
+SDL2_IMAGE_LIBRARY:FILEPATH=d:/Library/SDL2_image-2.0.0/lib/x86/SDL2_image.lib
+
+//Path to a file.
+SDL2_INCLUDE_DIR:PATH=d:/Library/SDL2/include
+
+//Where the SDL2 Library can be found
+SDL2_LIBRARY:STRING=d:/Library/SDL2/lib/x86/SDL2.lib
+
+//Path to a file.
+SDL2_MIXER_INCLUDE_DIR:PATH=d:/Library/SDL2_mixer-2.0.0/include
+
+//Path to a library.
+SDL2_MIXER_LIBRARY:FILEPATH=d:/Library/SDL2_mixer-2.0.0/lib/x86/SDL2_mixer.lib
+
+//Path to a file.
+SDL2_TTF_INCLUDE_DIR:PATH=d:/Library/SDL2_ttf-2.0.12/include
+
+//Path to a library.
+SDL2_TTF_LIBRARY:FILEPATH=d:/Library/SDL2_ttf-2.0.12/lib/x86/SDL2_ttf.lib
